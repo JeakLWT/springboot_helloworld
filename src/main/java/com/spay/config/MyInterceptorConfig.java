@@ -19,8 +19,9 @@ public class MyInterceptorConfig implements WebMvcConfigurer{
     public void addInterceptors(InterceptorRegistry registry) {
         System.out.println("========        registry           ===========");
         registry.addInterceptor(myInterceptor);
+        System.out.println("修改");
     }
-/*
+    /*
     @Bean
     public InterceptorRegistration interceptorRegistration(){
         InterceptorRegistration interceptorRegistration = new InterceptorRegistration(myInterceptor);
